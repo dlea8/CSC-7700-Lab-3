@@ -6,6 +6,7 @@
  */ 
 
 #include "haha_v3_xmega.h"
+#include "spi_driver.h"
 
 /* Set up chip interconnection as outputs */
 void haha_v3_interBegin(void)
