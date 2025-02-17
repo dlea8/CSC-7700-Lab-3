@@ -10,7 +10,7 @@
 #define HAHA_V3_XMEGA_H_
 
 #include "avr_compiler.h"
-// #include "spi_driver.h" // Uncomment if using SPI
+#include "spi_driver.h" // Uncomment if using SPI
 #include <avr/io.h>
 
 /* Pin Definitions for Chip Interconnection - Refer to the HaHa Manual */

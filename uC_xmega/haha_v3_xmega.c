@@ -5,8 +5,7 @@
  *  Author: Reiner Dizon-Paradis
  */ 
 
-#include "haha_v3_xmega.h"
-#include "spi_driver.h"
+#include "haha_v3_xmega.h"                                               
 
 /* Set up chip interconnection as outputs */
 void haha_v3_interBegin(void)
@@ -61,12 +60,41 @@ void haha_v3_SPIBegin(void)
 
 /* Add your own function that initializes SS (HOLD_N, WP_N) ports as needed for selected SPI device. It should called before SPI operations - Example below: */
 
+void init_SS()
+{
+
+	
+	// WP_N setup
+	W25N_WP_N_PORT.DIRSET = W25N_WP_N_PIN;
+	W25N_WP_N_PORT.PIN4CTRL = PORT_OPC_WIREDANDPULL_gc;
+
+	W25N_WP_N_PORT.OUTSET = W25N_WP_N_PIN;
+
+	// HOLD_N setup
+	W25N_HOLD_N_PORT.DIRSET = W25N_HOLD_N_PIN;
+	W25N_HOLD_N_PORT.PIN4CTRL = PORT_OPC_WIREDANDPULL_gc;
+
+	W25N_HOLD_N_PORT.OUTSET = W25N_HOLD_N_PIN;
+
+
+
+
+	// MC3635_ss_en()
+
+	// SPI_MasterTransceiveByte(&spiMasterC, <send_data>);
+	// read_data = SPI_MasterTransceiveByte(&spiMasterC, <send_data>);
+
+	// MC3635_ss_di()
+
+}
+
 /* Init SS pin as output with wired AND and pull-up. */
 // MC3635_SS_PORT.DIRSET = MC3635_SS_PIN;
 // MC3635_SS_PORT.PIN4CTRL = PORT_OPC_WIREDANDPULL_gc;
 
 /* Set SS output to high. (No slave addressed). */
 // MC3635_SS_PORT.OUTSET = MC3635_SS_PIN;
+
 
 #endif
 
