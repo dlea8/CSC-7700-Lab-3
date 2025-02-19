@@ -77,14 +77,15 @@ void init_SS()
 	W25N_HOLD_N_PORT.OUTSET = W25N_HOLD_N_PIN;
 
 
-
-
-	// MC3635_ss_en()
+	// W25N_ss_en()
 
 	// SPI_MasterTransceiveByte(&spiMasterC, <send_data>);
+
+	// W25N_ss_di()
+
 	// read_data = SPI_MasterTransceiveByte(&spiMasterC, <send_data>);
 
-	// MC3635_ss_di()
+	// need the .v file to send to the FPGA
 
 }
 
