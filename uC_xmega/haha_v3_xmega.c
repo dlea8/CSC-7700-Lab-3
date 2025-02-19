@@ -63,27 +63,22 @@ void haha_v3_SPIBegin(void)
 void init_SS()
 {
 
-	
-	// WP_N setup
-	W25N_WP_N_PORT.DIRSET = W25N_WP_N_PIN;
-	W25N_WP_N_PORT.PIN4CTRL = PORT_OPC_WIREDANDPULL_gc;
+	// SS setup
+	W25N_SS_PORT.DIRSET = W25N_SS_PIN;
+	W25N_SS_PORT.PIN4CTRL = PORT_OPC_WIREDANDPULL_gc;
 
-	W25N_WP_N_PORT.OUTSET = W25N_WP_N_PIN;
+	W25N_SS_PORT.OUTSET = W25N_SS_PIN;
 
-	// HOLD_N setup
-	W25N_HOLD_N_PORT.DIRSET = W25N_HOLD_N_PIN;
-	W25N_HOLD_N_PORT.PIN4CTRL = PORT_OPC_WIREDANDPULL_gc;
+	haha_v3_SPIBegin();
 
-	W25N_HOLD_N_PORT.OUTSET = W25N_HOLD_N_PIN;
+	// writing to flash
+	W25N_ss_en()
+	SPI_MasterTransceiveByte(&spiMasterC, 0x00);
+	W25N_ss_di()
 
-
-	// W25N_ss_en()
-
-	// SPI_MasterTransceiveByte(&spiMasterC, <send_data>);
-
-	// W25N_ss_di()
-
-	// read_data = SPI_MasterTransceiveByte(&spiMasterC, <send_data>);
+	W25N_ss_en()
+	byte read_data = SPI_MasterTransceiveByte(&spiMasterC, 0x00);
+	W25N_ss_di()
 
 	// need the .v file to send to the FPGA
 
