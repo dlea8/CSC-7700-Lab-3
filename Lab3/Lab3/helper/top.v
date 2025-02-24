@@ -27,9 +27,11 @@ module top(CLK_50, CLK_OSC_2, CM, CLK_inter, SPI_SS, SPI_MISO, SPI_SCLK, SPI_MOS
 	input [9:0] SW;		// switches: switch up = '0', switch down = '1'
 	
 	
-	/* FPGA GPIO - Add GPIOs based on HaHa manual*/
+	/* FPGA GPIO - Add GPIOs based on HaHa manual */
 	
 	
-	/* Add the remaining circuitry from here*/
+	/* Add the remaining circuitry from here */
+	/* CM may need to be compared to 8'h00 if that's how we wrote the other code */
+	assign LED = (CM == 8'h01) ? 8'h01 : 8'h00;
 
 endmodule
