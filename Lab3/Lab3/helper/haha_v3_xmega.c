@@ -69,7 +69,7 @@ void init_SS()
 
 	W25N_SS_PORT.OUTSET = W25N_SS_PIN;
 
-	haha_v3_SPIBegin();
+	haha_v3_SPIBegin();	
 	
 	uint8_t keyByte = 0x00;
 
@@ -79,7 +79,7 @@ void init_SS()
 	W25N_ss_di();
 
 	W25N_ss_en();
-	byte read_data = SPI_MasterTransceiveByte(&spiMasterC, keyByte);
+	unsigned char read_data = SPI_MasterTransceiveByte(&spiMasterC, keyByte);
 	W25N_ss_di();
 
 	// need the .v file to send to the FPGA
