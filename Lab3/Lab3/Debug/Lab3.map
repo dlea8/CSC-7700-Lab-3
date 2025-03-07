@@ -3,21 +3,72 @@ Archive member included to satisfy reference by file (symbol)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega2\libgcc.a(_exit.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/XMEGAA_DFP/1.3.146/gcc/dev/atxmega16a4u/avrxmega2/crtatxmega16a4u.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega2\libgcc.a(_clear_bss.o)
-                              main.o (__do_clear_bss)
+                              helper/haha_v3_xmega.o (__do_clear_bss)
 
 Allocating common symbols
 Common symbol       size              file
 
-spiMasterC          0x7               main.o
+spiMasterC          0x7               helper/haha_v3_xmega.o
 
 Discarded input sections
 
  .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/XMEGAA_DFP/1.3.146/gcc/dev/atxmega16a4u/avrxmega2/crtatxmega16a4u.o
  .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/XMEGAA_DFP/1.3.146/gcc/dev/atxmega16a4u/avrxmega2/crtatxmega16a4u.o
+ .text          0x00000000        0x0 helper/haha_v3_xmega.o
+ .data          0x00000000        0x0 helper/haha_v3_xmega.o
+ .bss           0x00000000        0x0 helper/haha_v3_xmega.o
+ .text.haha_v3_clkInterPos
+                0x00000000       0x14 helper/haha_v3_xmega.o
+ .text.haha_v3_clkInterNeg
+                0x00000000       0x14 helper/haha_v3_xmega.o
+ .text.haha_v3_interBegin
+                0x00000000       0x16 helper/haha_v3_xmega.o
+ .text.haha_v3_sendDataToFPGA
+                0x00000000        0xe helper/haha_v3_xmega.o
+ .text.haha_v3_SPIBegin
+                0x00000000       0x2c helper/haha_v3_xmega.o
+ .text.init_SS  0x00000000       0x2e helper/haha_v3_xmega.o
+ .debug_info    0x00000000      0x65a helper/haha_v3_xmega.o
+ .debug_abbrev  0x00000000      0x1e9 helper/haha_v3_xmega.o
+ .debug_loc     0x00000000      0x132 helper/haha_v3_xmega.o
+ .debug_aranges
+                0x00000000       0x48 helper/haha_v3_xmega.o
+ .debug_ranges  0x00000000       0x38 helper/haha_v3_xmega.o
+ .debug_line    0x00000000      0x267 helper/haha_v3_xmega.o
+ .debug_str     0x00000000      0x60e helper/haha_v3_xmega.o
+ .comment       0x00000000       0x31 helper/haha_v3_xmega.o
+ .debug_frame   0x00000000       0x98 helper/haha_v3_xmega.o
+ COMMON         0x00000000        0x7 helper/haha_v3_xmega.o
+ .text          0x00000000        0x0 helper/spi_driver.o
+ .data          0x00000000        0x0 helper/spi_driver.o
+ .bss           0x00000000        0x0 helper/spi_driver.o
+ .text.SPI_MasterInit
+                0x00000000       0x58 helper/spi_driver.o
+ .text.SPI_SlaveInit
+                0x00000000       0x36 helper/spi_driver.o
+ .text.SPI_MasterCreateDataPacket
+                0x00000000       0x24 helper/spi_driver.o
+ .text.SPI_MasterInterruptHandler
+                0x00000000       0x80 helper/spi_driver.o
+ .text.SPI_MasterInterruptTransceivePacket
+                0x00000000       0x74 helper/spi_driver.o
+ .text.SPI_MasterTransceiveByte
+                0x00000000       0x1a helper/spi_driver.o
+ .text.SPI_MasterTransceivePacket
+                0x00000000       0xa4 helper/spi_driver.o
+ .debug_info    0x00000000      0x784 helper/spi_driver.o
+ .debug_abbrev  0x00000000      0x1c3 helper/spi_driver.o
+ .debug_loc     0x00000000      0x4e3 helper/spi_driver.o
+ .debug_aranges
+                0x00000000       0x50 helper/spi_driver.o
+ .debug_ranges  0x00000000       0x40 helper/spi_driver.o
+ .debug_line    0x00000000      0x3aa helper/spi_driver.o
+ .debug_str     0x00000000      0x584 helper/spi_driver.o
+ .comment       0x00000000       0x31 helper/spi_driver.o
+ .debug_frame   0x00000000       0xcc helper/spi_driver.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
- COMMON         0x00000000        0x7 main.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega2\libgcc.a(_exit.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega2\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega2\libgcc.a(_exit.o)
@@ -66,6 +117,8 @@ user_signatures  0x00850000         0x00000400         rw !x
 Linker script and memory map
 
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/XMEGAA_DFP/1.3.146/gcc/dev/atxmega16a4u/avrxmega2/crtatxmega16a4u.o
+LOAD helper/haha_v3_xmega.o
+LOAD helper/spi_driver.o
 LOAD main.o
 START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega2\libm.a

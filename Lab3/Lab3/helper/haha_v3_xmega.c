@@ -78,9 +78,9 @@ void init_SS()
 	SPI_MasterTransceiveByte(&spiMasterC, keyByte);
 	W25N_ss_di();
 
-	W25N_ss_en();
-	unsigned char read_data = SPI_MasterTransceiveByte(&spiMasterC, keyByte);
-	W25N_ss_di();
+	//W25N_ss_en();
+	//unsigned char read_data = SPI_MasterTransceiveByte(&spiMasterC, keyByte);
+	//W25N_ss_di();
 
 	// need the .v file to send to the FPGA
 
