@@ -1,0 +1,44 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v'
+Compiling module 'top'("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":1)
+NOTE  (EX0101) : Current top module is "top"
+WARN  (EX0211) : The output port "SPI_SS" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":12)
+WARN  (EX0211) : The output port "SPI_SCLK" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":14)
+WARN  (EX0211) : The output port "SPI_MOSI" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":15)
+WARN  (EX0211) : The output port "FLASH_WP_n" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":16)
+WARN  (EX0211) : The output port "FLASH_HOLD_n" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":17)
+WARN  (EX0211) : The output port "SEG[7]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+WARN  (EX0211) : The output port "SEG[6]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+WARN  (EX0211) : The output port "SEG[5]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+WARN  (EX0211) : The output port "SEG[4]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+WARN  (EX0211) : The output port "SEG[3]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+WARN  (EX0211) : The output port "SEG[2]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+WARN  (EX0211) : The output port "SEG[1]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+WARN  (EX0211) : The output port "SEG[0]" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":21)
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input CLK_50 is unused("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":3)
+WARN  (CV0016) : Input CLK_OSC_2 is unused("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":4)
+WARN  (CV0016) : Input CM is unused("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":7)
+WARN  (CV0016) : Input CLK_inter is unused("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":9)
+WARN  (CV0016) : Input SPI_MISO is unused("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":13)
+WARN  (CV0016) : Input KEY is unused("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":26)
+WARN  (CV0016) : Input SW is unused("C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\top.v":27)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\impl\gwsynthesis\Darrin_FPGA_project.vg" completed
+[100%] Generate report file "C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\impl\gwsynthesis\Darrin_FPGA_project_syn.rpt.html" completed
+GowinSynthesis finish

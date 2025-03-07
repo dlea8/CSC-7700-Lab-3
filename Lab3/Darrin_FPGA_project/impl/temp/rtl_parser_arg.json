@@ -1,0 +1,17 @@
+{
+ "Device" : "GW1N-9C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/darri/OneDrive/Documents/Spring 2025/CSC 7700/Lab 3/Lab3/Darrin_FPGA_project/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/darri/OneDrive/Documents/Spring 2025/CSC 7700/Lab 3/Lab3/Darrin_FPGA_project/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

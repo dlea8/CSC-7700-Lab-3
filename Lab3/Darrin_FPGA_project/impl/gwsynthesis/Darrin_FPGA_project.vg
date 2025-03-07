@@ -1,0 +1,148 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.11 (64-bit)"
+//Fri Mar  7 10:50:56 2025
+
+//Source file index table:
+//file0 "\C:/Users/darri/OneDrive/Documents/Spring\ 2025/CSC\ 7700/Lab\ 3/Lab3/Darrin_FPGA_project/src/top.v"
+`timescale 100 ps/100 ps
+module top (
+  CLK_50,
+  CLK_OSC_2,
+  CM,
+  CLK_inter,
+  SPI_SS,
+  SPI_MISO,
+  SPI_SCLK,
+  SPI_MOSI,
+  FLASH_WP_n,
+  FLASH_HOLD_n,
+  LED,
+  SEG,
+  KEY,
+  SW
+)
+;
+input CLK_50;
+input CLK_OSC_2;
+input [7:0] CM;
+input CLK_inter;
+output SPI_SS;
+input SPI_MISO;
+output SPI_SCLK;
+output SPI_MOSI;
+output FLASH_WP_n;
+output FLASH_HOLD_n;
+output [7:0] LED;
+output [7:0] SEG;
+input [2:0] KEY;
+input [9:0] SW;
+wire VCC;
+wire GND;
+  TBUF SPI_SS_s0 (
+    .O(SPI_SS),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SPI_SCLK_s0 (
+    .O(SPI_SCLK),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SPI_MOSI_s0 (
+    .O(SPI_MOSI),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF FLASH_WP_n_s0 (
+    .O(FLASH_WP_n),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF FLASH_HOLD_n_s0 (
+    .O(FLASH_HOLD_n),
+    .I(GND),
+    .OEN(VCC) 
+);
+  OBUF LED_0_obuf (
+    .O(LED[0]),
+    .I(VCC) 
+);
+  OBUF LED_1_obuf (
+    .O(LED[1]),
+    .I(GND) 
+);
+  OBUF LED_2_obuf (
+    .O(LED[2]),
+    .I(GND) 
+);
+  OBUF LED_3_obuf (
+    .O(LED[3]),
+    .I(GND) 
+);
+  OBUF LED_4_obuf (
+    .O(LED[4]),
+    .I(GND) 
+);
+  OBUF LED_5_obuf (
+    .O(LED[5]),
+    .I(GND) 
+);
+  OBUF LED_6_obuf (
+    .O(LED[6]),
+    .I(GND) 
+);
+  OBUF LED_7_obuf (
+    .O(LED[7]),
+    .I(GND) 
+);
+  TBUF SEG_7_s0 (
+    .O(SEG[0]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SEG_7_s1 (
+    .O(SEG[1]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SEG_7_s2 (
+    .O(SEG[2]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SEG_7_s3 (
+    .O(SEG[3]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SEG_7_s4 (
+    .O(SEG[4]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SEG_7_s5 (
+    .O(SEG[5]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SEG_7_s6 (
+    .O(SEG[6]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  TBUF SEG_7_s7 (
+    .O(SEG[7]),
+    .I(GND),
+    .OEN(VCC) 
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* top */

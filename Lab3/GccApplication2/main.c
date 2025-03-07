@@ -1,22 +1,21 @@
 /*
- * Lab3.c
+ * GccApplication2.c
  *
- * Created: 2/19/2025 10:30:01 AM
- * Author : trebu
+ * Created: 3/7/2025 8:55:12 AM
+ * Author : darrin
  */ 
 
 #include <avr/io.h>
 #include "helper/haha_v3_xmega.h"
 
-
 int main(void)
 {
-    init_SS();
-    
+	
+	init_SS();
+
     /* Replace with your application code */
     while (1) 
     {
-		
     }
 }
 

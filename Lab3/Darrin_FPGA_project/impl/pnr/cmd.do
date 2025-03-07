@@ -1,0 +1,16 @@
+-d C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\impl\gwsynthesis\Darrin_FPGA_project.vg
+-p GW1N-9C-LQFP144-6
+-pn GW1N-UV9LQ144C6/I5
+-cst C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\src\Darrin_FPGA_project.cst
+-cfg C:\Users\darri\OneDrive\Documents\Spring 2025\CSC 7700\Lab 3\Lab3\Darrin_FPGA_project\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-place_option 0
+-route_option 0
+-correct_hold 1
+-route_maxfan 23
+-global_freq 50.000
